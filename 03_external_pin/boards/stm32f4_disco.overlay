@@ -1,0 +1,15 @@
+/ {
+    leds {
+        compatible = "gpio-leds";
+
+        ext_led0: ext_led0 {
+            gpios = <&gpioa 5 GPIO_ACTIVE_HIGH>;
+            label = "EXT_LED0";
+        };
+    };
+
+    aliases {
+        extled = &ext_led0;
+    };
+};
+
