@@ -1,0 +1,10 @@
+&i2c1 {
+    status = "okay";
+
+    ds1307: rtc@68 {
+        compatible = "i2c-device";
+        reg = <0x68>;
+        label = "DS1307";
+    };
+};
+
