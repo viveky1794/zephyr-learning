@@ -1,0 +1,12 @@
+&i2c2 {
+    status = "okay";
+	pinctrl-0 = < &i2c2_scl_pb10 &i2c2_sda_pb11 >;
+	pinctrl-names = "default";
+	
+    oled_ssd1306: oled@3c {
+        compatible = "i2c-device";
+        reg = <0x3C>;
+        label = "oled";
+    };
+};
+
