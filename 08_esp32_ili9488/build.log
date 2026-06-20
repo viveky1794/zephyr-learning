@@ -1,0 +1,710 @@
+-- west build: making build dir /home/vivek/zephyrproject/esp32_ili9488/build pristine
+-- west build: generating a build system
+Loading Zephyr default modules (Zephyr base).
+-- Application: /home/vivek/zephyrproject/esp32_ili9488
+-- CMake version: 3.28.3
+-- Found Python3: /home/vivek/zephyrproject/.venv/bin/python3 (found suitable version "3.12.3", minimum required is "3.10") found components: Interpreter 
+-- Cache files will be written to: /home/vivek/.cache/zephyr
+-- Zephyr version: 4.3.99 (/home/vivek/zephyrproject/zephyr)
+-- Found west (found suitable version "1.5.0", minimum required is "0.14.0")
+-- Board: doit_esp32_devkit_v1, qualifiers: esp32/procpu
+-- ZEPHYR_TOOLCHAIN_VARIANT not set, trying to locate Zephyr SDK
+-- Found host-tools: zephyr 0.17.4 (/home/vivek/zephyr-sdk-0.17.4)
+-- Found toolchain: zephyr 0.17.4 (/home/vivek/zephyr-sdk-0.17.4)
+-- Found Dtc: /home/vivek/zephyr-sdk-0.17.4/sysroots/x86_64-pokysdk-linux/usr/bin/dtc (found suitable version "1.7.0", minimum required is "1.4.6") 
+-- Found BOARD.dts: /home/vivek/zephyrproject/zephyr/boards/others/doit_esp32_devkit_v1/doit_esp32_devkit_v1_procpu.dts
+-- Found devicetree overlay: /home/vivek/zephyrproject/esp32_ili9488/app.overlay
+-- Generated zephyr.dts: /home/vivek/zephyrproject/esp32_ili9488/build/zephyr/zephyr.dts
+-- Generated pickled edt: /home/vivek/zephyrproject/esp32_ili9488/build/zephyr/edt.pickle
+-- Generated devicetree_generated.h: /home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h
+Parsing /home/vivek/zephyrproject/zephyr/Kconfig
+Loaded configuration '/home/vivek/zephyrproject/zephyr/boards/others/doit_esp32_devkit_v1/doit_esp32_devkit_v1_procpu_defconfig'
+Merged configuration '/home/vivek/zephyrproject/esp32_ili9488/prj.conf'
+Configuration saved to '/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/.config'
+Kconfig header saved to '/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/autoconf.h'
+-- Found GnuLd: /home/vivek/zephyr-sdk-0.17.4/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf/bin/ld.bfd (found version "2.38") 
+-- The C compiler identification is GNU 12.2.0
+-- The CXX compiler identification is GNU 12.2.0
+-- The ASM compiler identification is GNU
+-- Found assembler: /home/vivek/zephyr-sdk-0.17.4/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc
+-- Espressif HAL path: /home/vivek/zephyrproject/modules/hal/espressif
+-- Image partition address: 0x1000
+-- Using ccache: /usr/bin/ccache
+-- Found gen_kobject_list: /home/vivek/zephyrproject/zephyr/scripts/build/gen_kobject_list.py
+-- Configuring done (8.5s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/vivek/zephyrproject/esp32_ili9488/build
+-- west build: building application
+[1/233] Preparing syscall dependency handling
+
+[2/233] Generating ../../../../include/generated/zephyr/core-isa-dM.h
+[3/233] Generating misc/generated/syscalls_subdirs.trigger
+[4/233] Generating ../../../../include/generated/xtensa_vectors.ld
+[5/233] Generating ../../../../include/generated/zephyr/zsr.h
+[6/233] Generating include/generated/zephyr/version.h
+-- Zephyr version: 4.3.99 (/home/vivek/zephyrproject/zephyr), build: v4.3.0-5193-g4f3478391a3c
+[7/233] Generating misc/generated/syscalls.json, misc/generated/struct_tags.json
+[8/233] Generating include/generated/device-api-sections.ld, include/generated/device-api-sections.cmake
+[9/233] Generating include/generated/zephyr/syscall_dispatch.c, include/generated/zephyr/syscall_exports_llext.c, syscall_weakdefs_llext.c, include/generated/zephyr/syscall_list.h
+[10/233] Generating include/generated/zephyr/kobj-types-enum.h, include/generated/zephyr/otype-to-str.h, include/generated/zephyr/otype-to-size.h
+[11/233] Generating include/generated/zephyr/driver-validation.h
+[12/233] Building C object zephyr/CMakeFiles/offsets.dir/arch/xtensa/core/offsets/offsets.c.obj
+[13/233] Generating include/generated/zephyr/offsets.h
+[14/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/printk.c.obj
+[15/233] Building C object CMakeFiles/app.dir/src/main.c.obj
+[16/233] Linking C static library app/libapp.a
+[17/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/libc/validate_libc.c.obj
+[18/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/thread_entry.c.obj
+[19/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/heap/heap.c.obj
+[20/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/clock.c.obj
+[21/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/assert.c.obj
+[22/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/dec.c.obj
+[23/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/sem.c.obj
+[24/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_packaged.c.obj
+[25/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/mpsc_pbuf.c.obj
+[26/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/hex.c.obj
+[27/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitmask.c.obj
+[28/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/timeutil.c.obj
+[29/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/os/cbprintf_complete.c.obj
+[30/233] Building C object zephyr/CMakeFiles/zephyr.dir/misc/generated/configs.c.obj
+[31/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt_common.c.obj
+[32/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/ring_buffer.c.obj
+[33/233] Building C object zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32/esp32-mp.c.obj
+[34/233] Building C object zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32/soc.c.obj
+[35/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/getopt/getopt.c.obj
+[36/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/rb.c.obj
+[37/233] Building C object zephyr/CMakeFiles/zephyr.dir/lib/utils/bitarray.c.obj
+[38/233] Building C object zephyr/CMakeFiles/zephyr.dir/soc/espressif/esp32/hw_init.c.obj
+[39/233] Building C object zephyr/CMakeFiles/zephyr.dir/soc/espressif/common/loader.c.obj
+[40/233] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_core.c.obj
+[41/233] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_mgmt.c.obj
+[42/233] Building ASM object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/src/hal/windowspill_asm.S.obj
+[43/233] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_cache.c.obj
+[44/233] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_output.c.obj
+[45/233] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/tracing/tracing_none.c.obj
+[46/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/efuse/esp32/esp_efuse_table.c.obj
+[47/233] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/log_msg.c.obj
+[48/233] Building C object zephyr/CMakeFiles/zephyr.dir/subsys/logging/backends/log_backend_uart.c.obj
+[49/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/efuse/esp32/esp_efuse_utility.c.obj
+[50/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_mm/cache_esp32.c.obj
+[51/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/efuse/src/efuse_controller/keys/without_key_purposes/three_key_blocks/esp_efuse_api_key.c.obj
+[52/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/efuse/src/esp_efuse_utility.c.obj
+[53/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/efuse/src/esp_efuse_api.c.obj
+[54/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/bootloader_support/src/flash_encrypt.c.obj
+[55/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/spi_flash_encrypt_hal_iram.c.obj
+[56/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_gpio_reserve.c.obj
+[57/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/esp32/cache_hal_esp32.c.obj
+[58/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/mmu_hal.c.obj
+[59/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/spi_flash_hal.c.obj
+[60/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/spi_flash_hal_iram.c.obj
+[61/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/flash_ops.c.obj
+[62/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/esp_flash_spi_init.c.obj
+[63/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/flash_mmap.c.obj
+[64/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_boya.c.obj
+[65/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_drivers.c.obj
+[66/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/memspi_host_driver.c.obj
+[67/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_issi.c.obj
+[68/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_gd.c.obj
+[69/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic_opi.c.obj
+[70/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_th.c.obj
+[71/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_mxic.c.obj
+[72/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/esp_flash_api.c.obj
+[73/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_noos.c.obj
+[74/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/soc/lldesc.c.obj
+[75/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_winbond.c.obj
+[76/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/spi_hal_iram.c.obj
+[77/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/uart_hal_iram.c.obj
+[78/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_os_func_app.c.obj
+[79/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/spi_hal.c.obj
+[80/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/mpu_hal.c.obj
+[81/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/uart_hal.c.obj
+[82/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/spi_flash/spi_flash_chip_generic.c.obj
+[83/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/soc/esp32/gpio_periph.c.obj
+[84/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_clock_init.c.obj
+[85/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/soc/esp32/rtc_io_periph.c.obj
+[86/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/soc/esp32/dport_access.c.obj
+[87/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/bootloader_support/bootloader_flash/src/flash_qio_mode.c.obj
+[88/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/common/console_init.c.obj
+[89/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/bootloader_support/src/bootloader_efuse.c.obj
+[90/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/common/soc_init.c.obj
+[91/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/mac_addr.c.obj
+[92/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/esp_clk.c.obj
+[93/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/clk_ctrl_os.c.obj
+[94/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/periph_ctrl.c.obj
+[95/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/cpu.c.obj
+[96/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/regi2c_ctrl.c.obj
+[97/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/cpu_region_protect.c.obj
+[98/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/rtc_module.c.obj
+[99/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp_clk_tree_common.c.obj
+[100/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/hw_random.c.obj
+[101/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_cpu_intr.c.obj
+[102/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_init.c.obj
+[103/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/esp_clk_tree.c.obj
+[104/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_mm/port/esp32/ext_mem_layout.c.obj
+[105/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_time.c.obj
+[106/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_rom/patches/esp_rom_crc.c.obj
+[107/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_clk_init.c.obj
+[108/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_rom/patches/esp_rom_sys.c.obj
+[109/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/sar_periph_ctrl.c.obj
+[110/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_rom/patches/esp_rom_efuse.c.obj
+[111/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_rom/patches/esp_rom_uart.c.obj
+[112/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_rom/patches/esp_rom_gpio.c.obj
+[113/233] Building ASM object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_rom/patches/esp_rom_longjmp.S.obj
+[114/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_system/port/soc/esp32/clk.c.obj
+[115/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_rom/patches/esp_rom_spiflash.c.obj
+[116/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_system/port/soc/esp32/reset_reason.c.obj
+[117/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_system/port/soc/esp32/system_internal.c.obj
+[118/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_mm/esp_mmu_map.c.obj
+[119/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/port/esp32/rtc_clk.c.obj
+[120/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_timer/src/ets_timer_legacy.c.obj
+[121/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_hw_support/sleep_modes.c.obj
+[122/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_common.c.obj
+[123/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_system/esp_err.c.obj
+[124/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/efuse_hal.c.obj
+[125/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_timer/src/esp_timer_impl_lac.c.obj
+[126/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/wdt_hal_iram.c.obj
+[127/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/esp32/clk_tree_hal.c.obj
+[128/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/hal/esp32/efuse_hal.c.obj
+[129/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/log/log.c.obj
+[130/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/esp_timer/src/esp_timer.c.obj
+[131/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/components/log/log_noos.c.obj
+[132/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/port/bootloader/bootloader_flash.c.obj
+[133/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/port/host_flash/cache_utils.c.obj
+[134/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/src/stubs.c.obj
+[135/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/src/soc_random.c.obj
+[136/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/src/soc_init.c.obj
+[137/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/port/heap/heap_caps_zephyr.c.obj
+[138/233] Generating linker_zephyr_pre0.cmd
+[139/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/common/flash_init.c.obj
+[140/233] Building C object zephyr/CMakeFiles/zephyr_pre0.dir/misc/empty_file.c.obj
+[141/233] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/sw_isr_common.c.obj
+[142/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/src/soc_flash_init.c.obj
+[143/233] Building C object zephyr/CMakeFiles/zephyr.dir/home/vivek/zephyrproject/modules/hal/espressif/zephyr/common/esp_restart.c.obj
+[144/233] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/dynamic_isr.c.obj
+[145/233] Building ASM object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/window_vectors.S.obj
+[146/233] Building C object zephyr/arch/common/CMakeFiles/arch__common.dir/init.c.obj
+[147/233] Building ASM object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_asm2_util.S.obj
+[148/233] Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/cpu_idle.c.obj
+[149/233] Building C object zephyr/arch/common/CMakeFiles/isr_tables.dir/isr_tables.c.obj
+[150/233] Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/fatal.c.obj
+[151/233] Linking C static library zephyr/arch/common/libisr_tables.a
+[152/233] Linking C static library zephyr/libzephyr.a
+[153/233] Linking C static library zephyr/arch/common/libarch__common.a
+[154/233] Building ASM object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/debug_helpers_asm.S.obj
+[155/233] Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/xtensa_backtrace.c.obj
+[156/233] Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/thread.c.obj
+[157/233] Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/prep_c.c.obj
+[158/233] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/assert.c.obj
+[159/233] Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/irq_manage.c.obj
+[160/233] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/errno_wrap.c.obj
+[161/233] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/locks.c.obj
+[162/233] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/chk_fail.c.obj
+[163/233] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/exit.c.obj
+[164/233] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/cbprintf.c.obj
+[165/233] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/time/time.c.obj
+[166/233] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/abort.c.obj
+[167/233] Building C object zephyr/lib/libc/picolibc/CMakeFiles/lib__libc__picolibc.dir/stdio.c.obj
+[168/233] Linking C static library zephyr/lib/libc/picolibc/liblib__libc__picolibc.a
+[169/233] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/fnmatch.c.obj
+[170/233] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/getentropy.c.obj
+[171/233] Building C object zephyr/lib/libc/common/CMakeFiles/lib__libc__common.dir/source/stdlib/malloc.c.obj
+[172/233] Linking C static library zephyr/lib/libc/common/liblib__libc__common.a
+[173/233] Building C object zephyr/lib/posix/c_lib_ext/CMakeFiles/lib__posix__c_lib_ext.dir/getopt_shim.c.obj
+[174/233] Linking C static library zephyr/lib/posix/c_lib_ext/liblib__posix__c_lib_ext.a
+[175/233] Building C object zephyr/drivers/console/CMakeFiles/drivers__console.dir/uart_console.c.obj
+[176/233] Linking C static library zephyr/drivers/console/libdrivers__console.a
+[177/233] Building C object zephyr/arch/arch/xtensa/core/CMakeFiles/arch__xtensa__core.dir/vector_handlers.c.obj
+[178/233] Linking C static library zephyr/arch/arch/xtensa/core/libarch__xtensa__core.a
+[179/233] Building C object zephyr/drivers/interrupt_controller/CMakeFiles/drivers__interrupt_controller.dir/intc_esp32.c.obj
+[180/233] Linking C static library zephyr/drivers/interrupt_controller/libdrivers__interrupt_controller.a
+[181/233] Building C object zephyr/drivers/display/CMakeFiles/drivers__display.dir/display_ili9488.c.obj
+[182/233] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/common.c.obj
+[183/233] Building C object zephyr/drivers/clock_control/CMakeFiles/drivers__clock_control.dir/clock_control_esp32.c.obj
+[184/233] Linking C static library zephyr/drivers/clock_control/libdrivers__clock_control.a
+[185/233] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/sys_clock_init.c.obj
+[186/233] Building C object zephyr/drivers/pinctrl/CMakeFiles/drivers__pinctrl.dir/pinctrl_esp32.c.obj
+[187/233] Building C object zephyr/drivers/serial/CMakeFiles/drivers__serial.dir/uart_esp32.c.obj
+[188/233] Linking C static library zephyr/drivers/pinctrl/libdrivers__pinctrl.a
+[189/233] Building C object zephyr/drivers/gpio/CMakeFiles/drivers__gpio.dir/gpio_esp32.c.obj
+[190/233] Linking C static library zephyr/drivers/serial/libdrivers__serial.a
+[191/233] Linking C static library zephyr/drivers/gpio/libdrivers__gpio.a
+[192/233] Building C object zephyr/drivers/timer/CMakeFiles/drivers__timer.dir/xtensa_sys_timer.c.obj
+[193/233] Linking C static library zephyr/drivers/timer/libdrivers__timer.a
+[194/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/main_weak.c.obj
+[195/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/banner.c.obj
+[196/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/errno.c.obj
+[197/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/busy_wait.c.obj
+[198/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/device.c.obj
+[199/233] Building C object zephyr/drivers/spi/CMakeFiles/drivers__spi.dir/spi_esp32_spim.c.obj
+[200/233] Linking C static library zephyr/drivers/spi/libdrivers__spi.a
+[201/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/fatal.c.obj
+[202/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/version.c.obj
+[203/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/kheap.c.obj
+[204/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/init.c.obj
+[205/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mem_slab.c.obj
+[206/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/idle.c.obj
+[207/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/float.c.obj
+[208/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/msg_q.c.obj
+[209/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mailbox.c.obj
+[210/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/stack.c.obj
+[211/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sem.c.obj
+[212/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/queue.c.obj
+[213/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/system_work_q.c.obj
+[214/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mutex.c.obj
+[215/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/work.c.obj
+[216/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/condvar.c.obj
+[217/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/thread.c.obj
+[218/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeslicing.c.obj
+[219/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timer.c.obj
+[220/233] Building C object zephyr/drivers/display/CMakeFiles/drivers__display.dir/display_ili9xxx.c.obj
+FAILED: zephyr/drivers/display/CMakeFiles/drivers__display.dir/display_ili9xxx.c.obj 
+ccache /home/vivek/zephyr-sdk-0.17.4/xtensa-espressif_esp32_zephyr-elf/bin/xtensa-espressif_esp32_zephyr-elf-gcc -DCONFIG_APP_BUILD_USE_FLASH_SECTIONS -DCONFIG_ESP_SYSTEM_CHECK_INT_LEVEL_4 -DESP_PLATFORM -DKERNEL -DK_HEAP_MEM_POOL_SIZE=4096 -DPICOLIBC_LONG_LONG_PRINTF_SCANF -D_POSIX_THREAD_SAFE_FUNCTIONS=200809L -D__LINUX_ERRNO_EXTENSIONS__ -D__ZEPHYR_SUPERVISOR__ -D__ZEPHYR__=1 -I/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr -I/home/vivek/zephyrproject/zephyr/include -I/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated -I/home/vivek/zephyrproject/zephyr/soc/espressif -I/home/vivek/zephyrproject/zephyr/lib/libc/picolibc/include -I/home/vivek/zephyrproject/zephyr/lib/posix/c_lib_ext/getopt -I/home/vivek/zephyrproject/zephyr/soc/espressif/common/include -I/home/vivek/zephyrproject/zephyr/soc/espressif/esp32/. -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/include/bt -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../esp_shared/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../esp_shared/components/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../port/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../common/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/efuse/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/efuse/private_include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/efuse/esp32/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/efuse/esp32/private_include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_common/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_hw_support/dma -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_hw_support/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_hw_support/include/esp_private -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_hw_support/include/hal -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_hw_support/include/soc -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_hw_support/include/soc/esp32 -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_hw_support/port/esp32 -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_hw_support/port/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_rom/esp32 -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_rom/esp32/ld -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_rom/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_rom/include/esp32 -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_system/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_system/include/esp_private -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_system/port/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_system/port/include/private -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/hal/esp32/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/hal/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/hal/platform_port/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/log/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/soc/esp32/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/soc/esp32/include/soc -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/soc/esp32/ld -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/soc/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/xtensa/esp32/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/xtensa/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/xtensa/include/esp_private -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/xtensa/include/xtensa -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_timer/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_timer/private_include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/driver/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/driver/deprecated -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/driver/gpio/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/driver/uart/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/driver/touch_sensor/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/driver/touch_sensor/esp32/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/driver/spi/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/spi_flash/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/spi_flash/include/spi_flash -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_pm/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/bootloader_support/bootloader_flash/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/bootloader_support/private_include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/bootloader_support/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/heap/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_psram/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_mm/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_wifi/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_event/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_event/private_include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_phy/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_phy/include/esp32 -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_phy/esp32/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_wifi/esp32/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_netif/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/esp_supplicant/src -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/esp_supplicant/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/include/esp_supplicant -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/port/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/src -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/src/crypto -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/src/eap_peer -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/wpa_supplicant/src/utils -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/esp_coex/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../../components/mbedtls/port/include -I/home/vivek/zephyrproject/modules/hal/espressif/zephyr/esp32/../port/include/boot -I/home/vivek/zephyrproject/modules/hal/microchip/include -I/home/vivek/zephyrproject/modules/hal/st/sensor/inc -isystem /home/vivek/zephyrproject/zephyr/lib/libc/common/include -Wshadow -fno-strict-aliasing -Os -imacros /home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/autoconf.h -fno-printf-return-value -fno-common -g -gdwarf-4 -fdiagnostics-color=always --sysroot=/home/vivek/zephyr-sdk-0.17.4/xtensa-espressif_esp32_zephyr-elf/xtensa-espressif_esp32_zephyr-elf -imacros /home/vivek/zephyrproject/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/vivek/zephyrproject/esp32_ili9488=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/vivek/zephyrproject/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/vivek/zephyrproject=WEST_TOPDIR -ffunction-sections -fdata-sections -mlongcalls -specs=picolibc.specs -fstrict-volatile-bitfields -std=c17 -MD -MT zephyr/drivers/display/CMakeFiles/drivers__display.dir/display_ili9xxx.c.obj -MF zephyr/drivers/display/CMakeFiles/drivers__display.dir/display_ili9xxx.c.obj.d -o zephyr/drivers/display/CMakeFiles/drivers__display.dir/display_ili9xxx.c.obj -c /home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c
+In file included from /home/vivek/zephyrproject/zephyr/include/zephyr/device.h:12,
+                 from /home/vivek/zephyrproject/zephyr/include/zephyr/drivers/mipi_dbi.h:34,
+                 from /home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.h:12,
+                 from /home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:9:
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_frmctr1' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_reg'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:48:28: note: in expansion of macro 'DT_PROP'
+   48 |                 .frmctr1 = DT_PROP(DT_INST(n, ilitek_ili9488), frmctr1),       \
+      |                            ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:48:36: note: in expansion of macro 'DT_INST'
+   48 |                 .frmctr1 = DT_PROP(DT_INST(n, ilitek_ili9488), frmctr1),       \
+      |                                    ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:538:9: note: in expansion of macro 'ILI9488_REGS_INIT'
+  538 |         ILI##t##_REGS_INIT(n);                                                 \
+      |         ^~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_disctrl' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_status'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:49:28: note: in expansion of macro 'DT_PROP'
+   49 |                 .disctrl = DT_PROP(DT_INST(n, ilitek_ili9488), disctrl),       \
+      |                            ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:49:36: note: in expansion of macro 'DT_INST'
+   49 |                 .disctrl = DT_PROP(DT_INST(n, ilitek_ili9488), disctrl),       \
+      |                                    ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:538:9: note: in expansion of macro 'ILI9488_REGS_INIT'
+  538 |         ILI##t##_REGS_INIT(n);                                                 \
+      |         ^~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_pwctrl1' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_reg'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:50:28: note: in expansion of macro 'DT_PROP'
+   50 |                 .pwctrl1 = DT_PROP(DT_INST(n, ilitek_ili9488), pwctrl1),       \
+      |                            ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:50:36: note: in expansion of macro 'DT_INST'
+   50 |                 .pwctrl1 = DT_PROP(DT_INST(n, ilitek_ili9488), pwctrl1),       \
+      |                                    ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:538:9: note: in expansion of macro 'ILI9488_REGS_INIT'
+  538 |         ILI##t##_REGS_INIT(n);                                                 \
+      |         ^~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_pwctrl2' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_reg'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:51:28: note: in expansion of macro 'DT_PROP'
+   51 |                 .pwctrl2 = DT_PROP(DT_INST(n, ilitek_ili9488), pwctrl2),       \
+      |                            ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:51:36: note: in expansion of macro 'DT_INST'
+   51 |                 .pwctrl2 = DT_PROP(DT_INST(n, ilitek_ili9488), pwctrl2),       \
+      |                                    ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:538:9: note: in expansion of macro 'ILI9488_REGS_INIT'
+  538 |         ILI##t##_REGS_INIT(n);                                                 \
+      |         ^~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_vmctrl' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_status'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:52:27: note: in expansion of macro 'DT_PROP'
+   52 |                 .vmctrl = DT_PROP(DT_INST(n, ilitek_ili9488), vmctrl),         \
+      |                           ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:52:35: note: in expansion of macro 'DT_INST'
+   52 |                 .vmctrl = DT_PROP(DT_INST(n, ilitek_ili9488), vmctrl),         \
+      |                                   ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:538:9: note: in expansion of macro 'ILI9488_REGS_INIT'
+  538 |         ILI##t##_REGS_INIT(n);                                                 \
+      |         ^~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_pgamctrl' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_status'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:53:29: note: in expansion of macro 'DT_PROP'
+   53 |                 .pgamctrl = DT_PROP(DT_INST(n, ilitek_ili9488), pgamctrl),     \
+      |                             ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:53:37: note: in expansion of macro 'DT_INST'
+   53 |                 .pgamctrl = DT_PROP(DT_INST(n, ilitek_ili9488), pgamctrl),     \
+      |                                     ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:538:9: note: in expansion of macro 'ILI9488_REGS_INIT'
+  538 |         ILI##t##_REGS_INIT(n);                                                 \
+      |         ^~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_ngamctrl' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_status'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:54:29: note: in expansion of macro 'DT_PROP'
+   54 |                 .ngamctrl = DT_PROP(DT_INST(n, ilitek_ili9488), ngamctrl),     \
+      |                             ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9488.h:54:37: note: in expansion of macro 'DT_INST'
+   54 |                 .ngamctrl = DT_PROP(DT_INST(n, ilitek_ili9488), ngamctrl),     \
+      |                                     ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:538:9: note: in expansion of macro 'ILI9488_REGS_INIT'
+  538 |         ILI##t##_REGS_INIT(n);                                                 \
+      |         ^~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_mipi_max_frequency' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_reg_IDX_0_EXISTS'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/include/zephyr/drivers/mipi_dbi.h:70:30: note: in expansion of macro 'DT_PROP'
+   70 |                 .frequency = DT_PROP(node_id, mipi_max_frequency),      \
+      |                              ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:547:35: note: in expansion of macro 'MIPI_DBI_SPI_CONFIG_DT'
+  547 |                         .config = MIPI_DBI_SPI_CONFIG_DT(                      \
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:535:31: note: in expansion of macro 'DT_INST'
+  535 | #define INST_DT_ILI9XXX(n, t) DT_INST(n, ilitek_ili##t)
+      |                               ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:548:49: note: in expansion of macro 'INST_DT_ILI9XXX'
+  548 |                                                 INST_DT_ILI9XXX(n, t),         \
+      |                                                 ^~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_pixel_format' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_reg_IDX_0'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:553:33: note: in expansion of macro 'DT_PROP'
+  553 |                 .pixel_format = DT_PROP(INST_DT_ILI9XXX(n, t), pixel_format),  \
+      |                                 ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:535:31: note: in expansion of macro 'DT_INST'
+  535 | #define INST_DT_ILI9XXX(n, t) DT_INST(n, ilitek_ili##t)
+      |                               ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:553:41: note: in expansion of macro 'INST_DT_ILI9XXX'
+  553 |                 .pixel_format = DT_PROP(INST_DT_ILI9XXX(n, t), pixel_format),  \
+      |                                         ^~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_rotation' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_status'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:554:29: note: in expansion of macro 'DT_PROP'
+  554 |                 .rotation = DT_PROP(INST_DT_ILI9XXX(n, t), rotation),          \
+      |                             ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:535:31: note: in expansion of macro 'DT_INST'
+  535 | #define INST_DT_ILI9XXX(n, t) DT_INST(n, ilitek_ili##t)
+      |                               ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:554:37: note: in expansion of macro 'INST_DT_ILI9XXX'
+  554 |                 .rotation = DT_PROP(INST_DT_ILI9XXX(n, t), rotation),          \
+      |                                     ^~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_display_inversion' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_compatible_LEN'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5620:29: note: in definition of macro 'DT_CAT3'
+ 5620 | #define DT_CAT3(a1, a2, a3) a1 ## a2 ## a3
+      |                             ^~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:557:30: note: in expansion of macro 'DT_PROP'
+  557 |                 .inversion = DT_PROP(INST_DT_ILI9XXX(n, t), display_inversion),\
+      |                              ^~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:535:31: note: in expansion of macro 'DT_INST'
+  535 | #define INST_DT_ILI9XXX(n, t) DT_INST(n, ilitek_ili##t)
+      |                               ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:557:38: note: in expansion of macro 'INST_DT_ILI9XXX'
+  557 |                 .inversion = DT_PROP(INST_DT_ILI9XXX(n, t), display_inversion),\
+      |                                      ^~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/esp32_ili9488/build/zephyr/include/generated/zephyr/devicetree_generated.h:14175:36: error: 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_te_mode_STRING_UPPER_TOKEN' undeclared here (not in a function); did you mean 'DT_N_S_soc_S_spi_3ff65000_S_display_0_P_status_STRING_UPPER_TOKEN'?
+14175 | #define DT_N_INST_0_ilitek_ili9488 DT_N_S_soc_S_spi_3ff65000_S_display_0
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:5622:33: note: in definition of macro 'DT_CAT4'
+ 5622 | #define DT_CAT4(a1, a2, a3, a4) a1 ## a2 ## a3 ## a4
+      |                                 ^~
+/home/vivek/zephyrproject/zephyr/include/zephyr/drivers/mipi_dbi.h:138:9: note: in expansion of macro 'DT_STRING_UPPER_TOKEN'
+  138 |         DT_STRING_UPPER_TOKEN(node_id, edge_prop)
+      |         ^~~~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:558:28: note: in expansion of macro 'MIPI_DBI_TE_MODE_DT'
+  558 |                 .te_mode = MIPI_DBI_TE_MODE_DT(INST_DT_ILI9XXX(n, t), te_mode),\
+      |                            ^~~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'DT_N_INST_0_ilitek_ili9488'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:145:26: note: in expansion of macro 'UTIL_PRIMITIVE_CAT'
+  145 | #define UTIL_CAT(a, ...) UTIL_PRIMITIVE_CAT(a, __VA_ARGS__)
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/devicetree.h:350:31: note: in expansion of macro 'UTIL_CAT'
+  350 | #define DT_INST(inst, compat) UTIL_CAT(DT_N_INST, DT_DASH(inst, compat))
+      |                               ^~~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:535:31: note: in expansion of macro 'DT_INST'
+  535 | #define INST_DT_ILI9XXX(n, t) DT_INST(n, ilitek_ili##t)
+      |                               ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:558:48: note: in expansion of macro 'INST_DT_ILI9XXX'
+  558 |                 .te_mode = MIPI_DBI_TE_MODE_DT(INST_DT_ILI9XXX(n, t), te_mode),\
+      |                                                ^~~~~~~~~~~~~~~
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_listify.h:18:9: note: in expansion of macro 'ILI9XXX_INIT'
+   18 |         F(0, __VA_ARGS__)
+      |         ^
+/home/vivek/zephyrproject/zephyr/include/zephyr/sys/util_internal.h:146:36: note: in expansion of macro 'Z_UTIL_LISTIFY_1'
+  146 | #define UTIL_PRIMITIVE_CAT(a, ...) a##__VA_ARGS__
+      |                                    ^
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:571:9: note: in expansion of macro 'LISTIFY'
+  571 |         LISTIFY(DT_NUM_INST_STATUS_OKAY(ilitek_ili##t), ILI9XXX_INIT, (;), t)
+      |         ^~~~~~~
+/home/vivek/zephyrproject/zephyr/drivers/display/display_ili9xxx.c:590:1: note: in expansion of macro 'DT_INST_FOREACH_ILI9XXX_STATUS_OKAY'
+  590 | DT_INST_FOREACH_ILI9XXX_STATUS_OKAY(9488);
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[221/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/pipe.c.obj
+[222/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/timeout.c.obj
+[223/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/dynamic_disabled.c.obj
+[224/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/mempool.c.obj
+[225/233] Building C object zephyr/kernel/CMakeFiles/kernel.dir/sched.c.obj
+ninja: build stopped: subcommand failed.
+FATAL ERROR: command exited with status 1: /usr/bin/cmake --build /home/vivek/zephyrproject/esp32_ili9488/build

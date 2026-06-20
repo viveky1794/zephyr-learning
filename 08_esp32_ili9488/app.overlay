@@ -1,0 +1,53 @@
+/*
+ * Copyright (c) 2020 Teslabs Engineering S.L.
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+
+#include <zephyr/dt-bindings/display/panel.h>
+
+&spi2 {
+    status = "disabled";
+};
+
+&spi3 {
+    pinctrl-0 = <&spim3_default>;
+    pinctrl-names = "default";
+    cs-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>;
+    status = "okay";
+};
+
+
+&{/} {
+    zephyr,user {
+        bl-gpios = <&gpio0 32 GPIO_ACTIVE_HIGH>;
+    };
+
+    esp32_mipi_dbi_tft_ili9488 {
+        compatible = "zephyr,mipi-dbi-spi";
+        
+        dc-gpios =    <&gpio0 2 GPIO_ACTIVE_HIGH>;
+        reset-gpios = <&gpio0 4 GPIO_ACTIVE_LOW>;
+        spi-dev = <&spi3>;
+        write-only;
+        #address-cells = <1>;
+        #size-cells = <0>;    
+        
+        ili9488: display@0 {
+            compatible = "ilitek,ili9488";
+            
+            mipi-max-frequency = <30000000>;
+            reg = <0>;
+            pixel-format = <PANEL_PIXEL_FORMAT_RGB_888>;
+            width = <320>;
+            height = <480>;
+            rotation = <0>;
+            frmctr1 = [a0 11];
+            pwctrl1 = [17 15];
+            pwctrl2 = [41];
+            pgamctrl = [00 03 09 08 16 0a 3f 78 4c 09 0a 08 16 1a 0f];
+            ngamctrl = [00 16 19 03 0f 05 32 45 46 04 0e 0d 35 37 0f];
+        };
+    };    
+};
